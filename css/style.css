@@ -1,0 +1,386 @@
+@charset "utf-8";
+* {
+margin: 0;
+padding: 0;
+outline: none;
+}
+
+html {height: 100%}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	font-family: "Helvetica Neue", sans-serif;
+}
+
+a{
+	color: #060606;
+	text-decoration: none;
+	transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+img	{
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+
+.clear {clear: both}
+/* HEADER!!!! */
+
+header	{
+	background: url('../img/fonheader.jpg') repeat-x center 0;
+	background-size:cover;
+	width: 100%;
+	padding: 0%;
+	float: left;
+	box-shadow: 0 0 2em 1px #ACD715;
+	min-width: 1500px;
+}
+
+.title {
+	text-align: center;
+	padding: 10px;
+}
+
+#maintitle {
+	font:bold 40px Helvetica Neue;
+	color:#fff;
+	animation: shine .80s ease-in-out infinite alternate;
+}
+
+@keyframes shine {
+  from {
+    text-shadow:
+    0 0 6px #ffffff,
+    0 0 30px #81837a,
+    0 0 12px #bfdf49,
+    0 0 21px #b3d146,
+    0 0 34px #b2d631,
+    0 0 54px #ACD715;
+  }
+	to {
+    text-shadow:
+    0 0 6px #e8f6c9,
+    0 0 30px #858877,
+    0 0 12px #bfdf49,
+    0 0 22px #b3d146,
+    0 0 38px #667e0e,
+    0 0 60px #3d662d;
+  }
+}
+
+nav.navmain {
+	width: 100%;
+}
+
+	nav.navmain ul	{
+		list-style: none;
+		position: relative;
+		float: left;
+		display: inline-table;
+	}
+
+	nav.navmain ul li {
+		 float: left;
+		 -webkit-transition: all .2s ease-in-out;
+		 -moz-transition: all .2s ease-in-out;
+		 transition: all .2s ease-in-out;
+	}
+
+	nav.navmain ul li:hover{background: rgba(0,0,0,.15);}
+	nav.navmain ul li:hover > ul{display: block;}
+	nav.navmain ul li{
+		float: left;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+
+	nav.navmain ul li a {
+		display: block;
+		padding: 10px 20px;
+		color: #222;
+		font-size: .9em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	nav.navmain ul ul {
+      display: none;
+      background: #fff;
+	   position: absolute;
+	   top: 100%;
+	  	box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+	  	border: 1px solid rgba(0,0,0,.1);
+	   }
+
+	nav.navmain ul ul li{float: none; position: relative;}
+	nav.navmain ul ul li a {
+		padding: 15px 30px;
+		border-bottom: 1px solid rgba(0,0,0,.05);
+    }
+	nav.navmain ul ul ul {
+	 	position: absolute;
+		left: 100%;
+	 	top:0;
+ 	 }
+
+	.imagelogo {
+		height: 47px;
+	}
+
+.activenavmain {
+	box-shadow: 0 0 10px #ACD715, 1px 1px 150px #fbfaf9 inset;
+
+}
+
+/* /* /*  contentbody !!! */
+.content {
+	overflow:hidden;
+	width: 100%;
+	min-height: 845px;
+	min-width: 1500px;
+}
+
+.leftcontent, .centercontent, .rightcontent{
+	float:left;
+	padding-bottom:10000px;
+	margin-bottom:-10000px;
+}
+.leftcontent {
+	width: 12%;
+}
+.centercontent {
+	width: 76%;
+}
+
+.rightcontent {
+	width: 12%;
+}
+/* /* /*  leftcontent !!! */
+
+nav.navsecond ul li {
+	display:block;
+  	width:150px;
+	margin-top: 17px;
+	padding: 5px 10px;
+	background-color: #ACD715;
+	border-radius: 6px;
+	border: 2px solid #637819;
+	cursor: pointer;
+	}
+
+.navsecondli:hover {
+	background-color: #8cb00e;
+}
+
+
+	/* /* /* centercontent */
+.centercontent {
+	/* box-shadow: 0 0 2em 1px #ACD715 inset; */
+	height: 100%;
+}
+
+.centercontent #titledocx, #tegdocx {
+	text-align: center;
+}
+
+.centercontent #docxcontent {
+	min-height: 850px;
+	width: 98%;
+	padding-left: 10px;
+}
+
+    /* /* /* rightcontent */
+
+ input[type=text].field {
+ 	border: 2px solid silver;
+ 	margin-top: 17px;
+   margin-bottom: 16px;
+ 	padding: 5px 10px;
+ 	background-color: #ACD715;
+ 	border-radius: 6px;
+	width:150px;
+ }
+
+.asidebottom {
+	display:block;
+	width:150px;
+	margin-top: 17px;
+	padding: 5px 0px;
+	background-color: #ACD715;
+	border-radius: 6px;
+	border: 2px solid #637819;
+	cursor: pointer;
+	}
+
+.asidebottom:hover {
+	background-color: #8cb00e;
+	}
+
+    /* /* /* Стили для формы добавления документа */
+#formadddoc {
+	padding-bottom: 40px;
+	padding-top: 160px;
+	/* width: 100%; */
+	text-align: center;
+}
+
+#formadddoc div{
+	cursor: default;
+}
+
+#formadddoc #nameaddbase {
+	padding: 10px;
+}
+
+#formadddoc input, #formadddoc textarea, #formadddoc select {
+	border-radius: 6px;
+   border: 2px solid #637819;
+	height: 40px;
+	width: 500px;
+	margin: 10px;
+	padding: 3px;
+	font-size: 1.2em;
+}
+
+#formadddoc #creationdoc {
+	background-color: #ACD715;
+	cursor: pointer;
+}
+
+#formadddoc #messageShow {
+	font-size: 1.2em;
+   color: red;
+   width: 100%;
+   text-align: center;
+}
+
+#containerbodydoc {
+	width: 1200px;
+	margin:10px auto 5px;
+}
+
+
+
+
+    /* /* /* FOOTER */
+
+footer {
+	width: 100%;
+	background: url('../img/fonheader.jpg');
+	background-size:cover;
+	height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow: 0 0 2em 1px #ACD715;
+}
+
+footer #autor {
+	float:right;
+	text-align: right;
+	font-size: 1.1em;
+}
+
+/* style for addCompany, configuration, configurationchange */
+
+#addCompany, #configuration, #configurationchangecompany {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color:#ACD715;
+}
+
+#addCompany input{
+	margin: 10px;
+	padding: 5px;
+	font-size: 1.2em;
+	border-radius: 6px;
+}
+
+#configuration a, #configurationchangecompany a, #configurationchangecompany select, #addCompany a{
+	display: inline-block;
+	min-width:150px;
+	margin-top: 17px;
+	padding: 5px;
+	background-color: #c4ee30;
+	border-radius: 6px;
+	border: 2px solid #637819;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+
+#changebuttons *{
+		background-color: #c4ee30;
+		border: 2px solid #637819;
+		font-weight: bold;
+		margin: 10px;
+		border-radius: 6px;
+	}
+
+#configuration a:hover, #configurationchangecompany a:hover {
+	background-color: #8cb00e;
+	}
+
+
+
+#addCompany #loadlogo {
+	width: 330px;
+}
+
+#addCompany .showlogo {
+	height: 47px;
+	border: 2px solid #637819;
+}
+
+/* /* /* Стили для формы добавления документа */
+#formadddoc {
+padding-bottom: 40px;
+padding-top: 160px;
+/* width: 100%; */
+text-align: center;
+}
+
+#formadddoc div{
+cursor: default;
+}
+
+#formadddoc #nameaddbase {
+padding: 10px;
+}
+
+#formadddoc input, #formadddoc textarea, #formadddoc select {
+border-radius: 6px;
+border: 2px solid #637819;
+height: 40px;
+width: 500px;
+margin: 10px;
+padding: 3px;
+font-size: 1.2em;
+}
+
+#formadddoc #creationdoc {
+background-color: #ACD715;
+cursor: pointer;
+}
+
+#formadddoc #messageShow {
+font-size: 1.2em;
+color: red;
+width: 100%;
+text-align: center;
+}
+
+#containerbodydoc {
+width: 1200px;
+margin:10px auto 5px;
+}
